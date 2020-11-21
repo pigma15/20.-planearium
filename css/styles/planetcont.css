@@ -1,5 +1,6 @@
 .planetcont {
-    width: 100%;
+    width: 90%;
+    margin: 0% 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     transition: 2s;
@@ -15,7 +16,7 @@
     .planetcont > a > span {
         display: inline-block;
         position: absolute;
-        z-index: 1;
+        z-index: 1; 
         padding: 2%;
         line-height: 24px;
         font-size: 20px;
@@ -33,11 +34,11 @@
         filter: saturate(0.5) blur(1px);
         transition: 2s;
     }
-    .planetcont:hover > a:hover > img {
+        .planetcont:hover > a:hover > img {
         filter: saturate(1) blur(0);
         width: 100%;
         margin: 0;
     }
-    .planetcont:hover > a:not(:hover) > img {
+        .planetcont:hover > a:not(:hover) > img {
         filter: saturate(0) blur(20px);;
     }

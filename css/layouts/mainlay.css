@@ -1,3 +1,30 @@
 body {
     background-color: black;
 }
+    .container {
+        background-image: url(/img/milkyway.jpg);
+        width: 100vw;
+        height: 1000px;
+    }
+        .container > .top {
+            display: grid;
+            grid-template-rows: 5% 65% 30%;
+            margin: 5px 5%;
+        }
+            .container > .top > a {
+                display: inline-block;
+                grid-row: 2/3;
+                width: 100%;
+            }
+                .container > .top > a > img {
+                    display: inline-block;
+                    width: 100%;
+                    padding-left: 35%;
+                }
+            .container > .top > .form {
+                display: inline-block;
+                grid-row: 3/4;
+                float: left;
+                background-color: blue;
+                width: 35%;
+            }

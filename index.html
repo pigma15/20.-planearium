@@ -7,31 +7,51 @@
     <link rel="stylesheet" href="./css/variables/mainvari.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/./layouts/mainlay.css">
+    <link rel="stylesheet" href="./css/styles/form.css">
     <link rel="stylesheet" href="./css/styles/button.css">
     <link rel="stylesheet" href="./css/styles/planetcont.css">
     <link rel="stylesheet" href="./css/./custom/maincust.css">
 
 </head>
 <body>
-    <div class="planetcont">
-        <a href="#">
-            <span>mercury</span>
-            <img src="./img/mercury.png" alt="mercury">
-        </a>
-        <a href="#">
-            <span>venus</span>
-            <img src="./img/venus.png" alt="venus">
-        </a>
-        <a href="#">
-            <span>earth</span>
-            <img src="./img/earth.png" alt="earth">
-        </a>
-        <a href="#">
-            <span>mars</span>
-            <img src="./img/mars.png" alt="mars">
-        </a>
+    <div class="container">
+        <!--Logo and sign in or sign up-->
+        <div class="top">
+            <a href="./index.html">
+                <img src="./img/planearium.png" alt="planearium">
+            </a>
+            <form class="form">
+                <div class="row">
+                    <label class="label" for="email">e.mail</label>
+                    <input class="input" id="email" type="email" placeholder="e.mail">
+                </div>
+                <div class="row">
+                    <label class="label" for="password">password</label>
+                    <input class="input" id="pass" type="password" placeholder="password">
+                </div>
+            </form>
+        </div>
+        <!--Inner Planets-->
+        <div class="planetcont">
+            <a href="#">
+                <span>mercury</span>
+                <img src="./img/mercury.png" alt="mercury">
+            </a>
+            <a href="#">
+                <span>venus</span>
+                <img src="./img/venus.png" alt="venus">
+            </a>
+            <a href="#">
+                <span>earth</span>
+                <img src="./img/earth.png" alt="earth">
+            </a>
+            <a href="#">
+                <span>mars</span>
+                <img src="./img/mars.png" alt="mars">
+            </a>
+        </div>
+        <!--Inner Planets Out-->
     </div>
-
 </body>
 
 
