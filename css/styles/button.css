@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 4px 6px;
+    border: 1px white solid;
+    border-radius: 8px;
+}
+.button:hover {
+    border: 3px white solid;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.button:active {
+    color: black;
+    background-color: white;
+    border: 3px black solid;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.button:focus {
+    outline: none;
+}
