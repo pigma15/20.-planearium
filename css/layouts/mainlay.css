@@ -11,11 +11,11 @@
     width: 100%;
 }
     .titulinis {
-        background-color: brown;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 3fr 1fr;
         grid-area: titulinis;
         width: 100%;
+        margin-bottom: 20px;
     }
         .logo {
             display: inline-block;
@@ -24,17 +24,50 @@
             .logo > img {
                 display: inline-block;
                 width: 90%;
-                margin: 10px 5%;
+                margin: 40px 5%;
             }
+        .forma {
+            background-color: grey;
+            display: inline-block;
+            grid-column: 1/2;
+        }
     .innerplanets {
-        background-color: burlywood;
-        display: inline-block;
         grid-area: innerp;
+        display: grid;
+        width: 90%;
+        margin: 0 5%;
+        grid-template-columns: 1fr 1fr;
     }
+        .planet {
+            display: inline-block;
+            width: 96%;
+            margin: 2%;
+        }
+            .planet > p {
+                display: inline-block;
+                position: absolute;
+                margin: 5%;
+                color: white;
+                font-family: monospace;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: underline white;
+                text-transform: capitalize;
+            }
+            .planet > img {
+                display: inline-block;
+                width: 50%;
+                height: 50%;
+                margin: 25%;
+                filter: blur(0);
+                z-index: -1;
+            }
     .outerplanets {
-        background-color: darkgreen;
-        display: inline-block;
         grid-area: outerp;
+        display: grid;
+        width: 90%;
+        margin: 0 5%;
+        grid-template-columns: 1fr 1fr;
     }
     .extrabodies {
         background-color: darkseagreen;
