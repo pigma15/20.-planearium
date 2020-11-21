@@ -1,0 +1,40 @@
+.background {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-areas: 
+        '. titulinis .'
+        '. innerp .'
+        '. outerp .'
+        '. ekstrab .'
+        '. apacia .';
+    width: 100%;
+}
+    .titulinis {
+        background-color: brown;
+        display: inline-block;
+        grid-area: titulinis;
+        width: 100%;
+        height: 250px;
+    }
+    .innerplanets {
+        background-color: burlywood;
+        display: inline-block;
+        grid-area: innerp;
+    }
+    .outerplanets {
+        background-color: darkgreen;
+        display: inline-block;
+        grid-area: outerp;
+    }
+    .extrabodies {
+        background-color: darkseagreen;
+        display: inline-block;
+        grid-area: ekstrab;
+    }
+    .apacia {
+        background-color: darkturquoise;
+        display: inline-block;
+        grid-area: apacia;
+    }
+    
