@@ -5,7 +5,6 @@ body {
         display: inline-block;
         background-image: url(/img/milkyway.jpg);
         width: 100vw;
-        position: absolute;
         background-size: cover;
     }
         .container > .top {
