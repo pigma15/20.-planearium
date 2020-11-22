@@ -1,211 +1,130 @@
-.background {
+body {
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 90% 1fr;
-    grid-template-areas: 
-        '. titulinis .'
-        '. innerp .'
-        '. outerp .'
-        '. ekstrab .'
-        '. apacia .';
-    width: 100%;
 }
-    .titulinis {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-area: titulinis;
-        width: 100%;
-        margin-bottom: 20px;
-        border-bottom: 2px solid white;
-    }
-        .titulinis .logo {
-            display: inline-block;
-            grid-row: 1/2;
-            width: 100%;
-            margin-top: 10px;
-        }
-            .logo img {
-                display: inline-block;
-                width: 80%;
-                margin: 5px 10%;
-            }
-        .titulinis .forma {
-            display: inline-block;
-            grid-row: 2/3;
-            width: 100%;
-            margin-top: 10px;
-        }
-            .titulinis .forma div {
-                float: left;
-                width: 50%;
-                margin: 0px 0% 0px 10%;
-            }
-                .forma label {
-                    display: inline-block;
-                    width: 90%;
-                    margin: 1px 5%;
-                    color: white;
-                    font-size: 14px;
-                    font-family: monospace;
-                }
-                .forma input {
-                    display: inline-block;
-                    width: 90%;
-                    margin: 1px 5%;
-                    color: white;
-                    font-size: 14px;
-                }
-            .titulinis .forma button {
-                display: inline-block;
-                background-color: black;
-                color: white;
-                width: 20%;
-                font-size: 20px;
-                margin: 20px 20% 20px 0;
-                text-align: center;
-                border: 1px white solid;
-                border-radius: 10px;
-                }
-    .innerplanets {
-        grid-area: innerp;
-        display: grid;
-        width: 90%;
-        margin: 0 5%;
-        grid-template-columns: 1fr 1fr;
-    }
-        h1 {
-            display: inline-block;
-            grid-column: 1/3;
-            width: 100%;
-            color: white;
-            text-transform: capitalize;
-            text-align: center;
-            font-size: 30px;
-            margin: 20px 0px 0px;
-        }
-        .planet {
-            display: inline-block;
-            width: 96%;
-            margin: 2%;
-            box-shadow: 0 6px 3px #333333ab;
-        }
-            .planet > p {
-                display: inline-block;
-                position: absolute;
-                margin: 5%;
-                color: white;
-                font-family: monospace;
-                font-size: 18px;
-                font-weight: bold;
-                text-decoration: underline white;
-                text-transform: capitalize;
-            }
-            .planet > img {
-                display: inline-block;
-                width: 50%;
-                height: 50%;
-                margin: 25%;
-                filter: blur(0px);
-                z-index: -1;
-            }
-    .outerplanets {
-        grid-area: outerp;
-        display: grid;
-        width: 90%;
-        margin: 0 5%;
-        grid-template-columns: 1fr 1fr;
-    }
-    .extrabodies {
+    .container {
         display: inline-block;
-        grid-area: ekstrab;
+        background-image: url(/img/milkyway.jpg);
+        width: 100vw;
+        position: absolute;
+        background-size: cover;
     }
-        .extrabodies summary {
+        .container > .top {
             display: inline-block;
-            grid-column: 1/3;
-            width: 80%;
-            color: white;
-            text-transform: capitalize;
-            font-size: 30px;
-            font-weight: bold;
-            margin: 20px 10% 10px;
+            width: 90%;
+            margin: 5px 5% 0;
+            border-bottom: 1px grey solid;
         }
-            .categories summary {
+            .container > .top > a {
                 display: inline-block;
-                width: 70%;
-                font-size: 20px;
-                font-weight: normal;
-                margin: 5px 10% 5px 20%;
+                width: 65%;
+                margin-left: 35%;
+                transition: 0.6s;
             }
-            .categories .excont {
-                display: grid;
-                width: 70%;
-                margin: 5px 10% 5px 20%;
-                grid-template-columns: 1fr 1fr;
-                box-shadow: 0 6px 3px #333333ab;
+            .container > .top > a:hover {
+                filter: contrast(2);
             }
-                .categories .excont p {
+                .container > .top > a > img {
                     display: inline-block;
-                 /*   grid-column: 2/3; */
-                    margin: 0px 30%;
-                    color: white;
-                    font-family: monospace;
-                    font-size: 14px;
-                    font-weight: bold;
-                    text-decoration: underline white;
-                    text-transform: capitalize;
+                    width: 100%;
+                    height: 100%;
                 }
-                .categories .excont img {
-                    display: inline-block;
-                /*    grid-column: 2/3; */
-                    width: 30%;
-                    filter: blur(0px);
-                    margin: 0px 60% 0px 10%;
-                }
-    .apacia {
-        display: grid;
-        grid-area: apacia;
-        grid-template-columns: 1fr 50% 40% 1fr;
-        margin: 20px 0px;
-        border-top: 2px solid white;
-    }
-        .apacia .bottomimg {
-            display: inline-block;
-            grid-column: 2/3;
-        }
-            .bottomimg img {
-                display: inline-block;
-                width: 100%;
-                margin-top: 20px;
+            .container > .top > .form {
+                width: 35%;
             }
-        .apacia .channels {
-            background-color: black;
-            display: inline-block;
-            grid-column: 3/4;
-            width: 80%;
-            margin: 20px 10%;
+        .container > .main {
+            display: grid;
+            width: 90%;
+            margin: 0 5%;
+            margin-top: 50px;
+            grid-template-columns: 1fr 30% 30% 30% 1fr;
+            border-bottom: 2px solid grey;
         }
-            .apacia .channels h2 {
+            .container > .main > span {
                 display: inline-block;
-                color: white;
-                width: 100%;
-                margin: 6px 0px;
-                font-size: 16px;
-                font-weight: bold;
-                text-transform: capitalize;
-                text-align: center;
-            }
-            .apacia .channels a {
-                display: inline-block;
-                color: white;
-                width: 100%;
-                margin: 6px 0%;
+                grid-column: 2/5;
+                width: 90%;
+                color: rgb(235, 235, 235);
                 font-family: monospace;
-                font-size: 14px;
-                font-weight: bold;
-                text-decoration: underline grey;
+                font-size: 30px;
                 text-transform: capitalize;
-                text-align: center;
-                border: 2px solid white;
-                border-radius: 10px;
+                text-decoration: underline;
+                margin: 3px 0 27px 10%;
             }
-    
+            .container > .main > .planetcont {
+                grid-column: 2/5;
+            }
+        .container > .bottom {
+            display: grid;
+            width: 90%;
+            margin: 5px 5%;
+            grid-template-columns: 40% 60%;
+            padding: 10px 3%;
+        }
+            .container > .bottom > .popdown {
+                grid-column: 1/2;
+                border-right: 2px solid grey;
+            }
+            .container > .bottom > .extras {
+                display: inline-block;
+                grid-column: 2/3;
+                width: 96%;
+                margin: 0% 2%;
+            }
+                .container > .bottom > .extras > .links {
+                    display: inline-block;
+                    width: 37%;
+                    float: left;
+                    backdrop-filter: brightness(0.75);
+                    padding: 15px 3% 30px 3%;
+                    margin-right: 3%;
+                    border: 1px solid rgba(128, 128, 128, 0);
+                    border-radius: 10px;
+                }
+                    .container > .bottom > .extras > .links > span {
+                        display: inline-block;
+                        color: white;
+                        font-family: monospace;
+                        font-size: 20px;
+                        line-height: 22px;
+                        width: 100%;
+                        text-align: center;
+                        text-decoration: underline;
+                        text-transform: capitalize;
+                        margin-bottom: 15px;
+                    }
+                    .container > .bottom > .extras > .links > a {
+                        display: inline-block;
+                        width: 70%;
+                        margin: 3px 15%;
+                        text-transform: capitalize;
+                        background-color: rgba(128, 128, 128, 0.5);
+                    }
+                    .container > .bottom > .extras > .links > a:active {
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+                .container > .bottom > .extras > .random {
+                    display: inline-block;
+                    width: 60%;
+                    float: right;
+                }
+                    .container > .bottom > .extras > .random > img {
+                        display: inline-block;
+                        width: 100%;
+                    }
+        .container > .dugnas {
+            display: inline-block;
+            width: 100%;
+            background-color: black;
+            height: 50px;
+        }
+            .container > .dugnas > p {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: 26px;
+                line-height: 30px;
+                padding: 10px 0%;
+                cursor: help;
+            }

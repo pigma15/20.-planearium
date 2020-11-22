@@ -1,0 +1,78 @@
+.popdown {
+    display: inline-block;
+    width: 100%;
+}
+        .popdown .poptext {
+        display: inline-block;
+        color: white;
+        font-family: monospace;
+        font-size: 22px;
+        line-height: 24px;
+        text-align: left;
+        text-transform: capitalize;
+        }
+    .popdown > .popmain {
+        display: inline-block;
+        width: 100%;
+    }
+            .popdown > .popmain > .poptext {
+                    display: inline-block;
+                    width: 40%;
+                    margin: 2px 60% 2px 0%;
+            }
+        .popdown > .popmain > .popmenu {
+            display: inline-block;
+            width: 90%;
+            margin: 2px 0% 2px 10%;
+        }
+                .popdown > .popmain > .popmenu > .poptext {
+                    display: inline-block;
+                    width: 80%;
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin: 2px 20% 2px 0%;
+                }
+            .popdown > .popmain > .popmenu > .popobject {
+                display: inline-block;
+                width: 90%;
+                margin: 2px 0% 2px 10%;
+            }
+                    .popdown > .popmain > .popmenu > .popobject > .poptext {
+                        display: inline-block;
+                        width: 60%;
+                        font-size: 16px;
+                        line-height: 18px;
+                        margin: 2px 20%;
+                    }
+            .popdown > .popmain > .popmenu > .popobject > a {
+                display: inline-block;
+                width: 30%;
+                margin: 2px 20% 2px 50%;
+            }
+                .popdown > .popmain > .popmenu > .popobject > a > img {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10%;
+                    filter: saturate(0.3) blur(1px);
+                    transition: 1s;
+                }
+    .popdown .poptext:hover {
+        cursor: context-menu;
+    }
+    .popdown .poptext:active {
+        color: rgba(160, 160, 160, 0.815);
+    }
+    .popdown .poptext:active,
+    .popdown .poptext:focus {
+        outline: none;
+    }
+    .popdown > .popmain > .popmenu > .popobject > a:hover > img {
+        filter: saturate(1) blur(0px);
+        padding: 0%;
+    }
+    .popdown > .popmain > .popmenu > .popobject > a:active > img {
+        filter: saturate(1) blur(0px) brightness(1.5);
+    }
+
+
+     

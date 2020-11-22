@@ -1,0 +1,36 @@
+.form {
+    display: grid;
+    margin: 5px 0;
+    grid-template-columns: 1fr 84% 1fr;
+}
+    .form > .row {
+        display: inline-block;
+        grid-column: 2/3;
+        width: 100%;
+        margin: 3px 0;
+    }
+        .form > .row > .label {
+            display: inline-block;
+            width: 45%;
+            padding: 1px 5% 1px 15px;
+            color: white;
+            font-family: monospace;
+            text-decoration: line-through;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .form > .row > .input {
+            display: inline-block;
+            width: 35%;
+            float: right;
+            margin-right: 10%;
+            color: darkslategray;
+            font-size: 14px;
+            line-height: 18px;
+            border: 1px grey solid;
+            border-radius: 3px;
+        }
+        .form > .row > .input:focus {
+            outline: 2px solid black;
+            outline-style: groove;
+        }
