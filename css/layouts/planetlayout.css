@@ -35,7 +35,7 @@ body {
             display: grid;
             width: 100%;
             grid-template-columns: 1fr 50% 40% 1fr;
-            margin: 30px 0%;
+            margin: 15px 0%;
             padding-bottom: 15px;
             border-bottom: 1px grey solid;
         }
@@ -95,63 +95,103 @@ body {
                         filter: blur(0px);
                     }
                 }
-    /*    .container > .bottom {
+        .container > .bottom {
             display: grid;
-            width: 90%;
-            margin: 5px 5%;
+            grid-template-columns: 1fr 40% 50% 1fr;
+            width: 100%;
+            margin: 5px 0% 15px 0%;
             grid-template-columns: 40% 60%;
-            padding: 10px 3%;
         }
-            .container > .bottom > .popdown {
-                grid-column: 1/2;
-                border-right: 2px solid grey;
-            }
-            .container > .bottom > .extras {
+            .container > .bottom > .moons {
                 display: inline-block;
-                grid-column: 2/3;
-                width: 96%;
-                margin: 0% 2%;
+                width: 85%;
+                margin: 30px 5% 20px 10%;
             }
-                .container > .bottom > .extras > .links {
+                .container > .bottom > .moons > .moonsall {
                     display: inline-block;
-                    width: 37%;
-                    float: left;
-                    backdrop-filter: brightness(0.75);
-                    padding: 15px 3% 30px 3%;
-                    margin-right: 3%;
-                    border: 1px solid rgba(128, 128, 128, 0);
-                    border-radius: 10px;
+                    width: 100%;
                 }
-                    .container > .bottom > .extras > .links > span {
+                .moonstxt {
+                    display: inline-block;
+                    color: white;
+                    font-family: monospace;
+                    font-size: 22px;
+                    line-height: 24px;
+                    text-align: left;
+                    text-transform: capitalize;
+                }
+                    .moonsall > .moonstxt {
                         display: inline-block;
-                        color: white;
-                        font-family: monospace;
-                        font-size: 20px;
-                        line-height: 22px;
-                        width: 100%;
-                        text-align: center;
-                        text-decoration: underline;
-                        text-transform: capitalize;
-                        margin-bottom: 15px;
+                        width: 40%;
+                        margin: 2px 50% 2px 10%;                        
                     }
-                    .container > .bottom > .extras > .links > a {
+                        .moonsall > .moonsone {
+                            display: inline-block;
+                            width: 90%;
+                            margin: 2px 5% 2px 5%;
+                        }
+                        .moonsall > .moonsone > .moonstxt {
+                            display: inline-block;
+                            width: 60%;
+                            font-size: 16px;
+                            line-height: 18px;
+                            margin: 2px 20%;
+                        }
+                            .moonsall > .moonsone > a {
+                                display: inline-block;
+                                width: 40%;
+                                margin: 2px 30% 2px 30%;
+                            }
+                                .moonsall > .moonsone > a > img {
+                                    display: inline-block;
+                                    width: 100%;
+                                    padding: 10%;
+                                    filter: saturate(0.3) blur(1px);
+                                    transition: 1s;
+                                }
+                    .moons .moonstxt:hover {
+                        cursor: context-menu;
+                    }
+                    .moons .moonstxt:active {
+                        color: rgba(160, 160, 160, 0.815);
+                    }
+                    .moons .moonstxt:active,
+                    .moons .moonstxt:focus {
+                        outline: none;
+                    }
+                    .moons > .moonsall > .moonsone > a:hover > img {
+                        filter: saturate(1) blur(0px);
+                        padding: 0%;
+                    }
+                    .moons > .moonsall > .moonsone > a:active > img {
+                        filter: saturate(1) blur(0px) brightness(1.5);
+                    }
+            .container > .bottom > .links {
+                display: inline-block;
+                width: 90%;
+                margin: 20px 5%;
+                backdrop-filter: brightness(0.75);
+                border: 1px solid rgba(128, 128, 128, 0);
+                border-radius: 10px;
+                padding: 20px 0%;
+            }
+                .container > .bottom > .links > span {
+                    display: inline-block;
+                    color: white;
+                    font-family: monospace;
+                    font-size: 18px;
+                    line-height: 20px;
+                    width: 25%;
+                    text-align: center;
+                    text-decoration: underline;
+                    text-transform: capitalize;
+                    padding-top: 3px;
+                }
+                    .container > .bottom > .links > a {
                         display: inline-block;
-                        width: 70%;
-                        margin: 3px 15%;
+                        width: 22%;
                         text-transform: capitalize;
                         background-color: rgba(128, 128, 128, 0.5);
-                    }
-                    .container > .bottom > .extras > .links > a:active {
-                        background-color: rgba(255, 255, 255, 0.5);
-                    }
-                .container > .bottom > .extras > .random {
-                    display: inline-block;
-                    width: 60%;
-                    float: right;
-                }
-                    .container > .bottom > .extras > .random > img {
-                        display: inline-block;
-                        width: 100%;
                     }
         .container > .dugnas {
             display: inline-block;
@@ -169,4 +209,4 @@ body {
                 line-height: 30px;
                 padding: 10px 0%;
                 cursor: help;
-            } */
+            }
