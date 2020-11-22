@@ -14,17 +14,18 @@ body {
             .container > .top > a {
                 display: inline-block;
                 grid-row: 2/3;
-                width: 100%;
+                width: 65%;
+                margin-left: 35%;
+                transition: 0.6s;
+            }
+            .container > .top > a:hover {
+                filter: contrast(2);
             }
                 .container > .top > a > img {
                     display: inline-block;
                     width: 100%;
-                    padding-left: 35%;
                 }
             .container > .top > .form {
-                display: inline-block;
                 grid-row: 3/4;
-                float: left;
-                background-color: blue;
                 width: 35%;
             }
