@@ -5,6 +5,8 @@ body {
         display: inline-block;
         background-image: url(/img/milkyway.jpg);
         width: 100vw;
+        position: absolute;
+        background-size: cover;
     }
         .container > .top {
             display: inline-block;
@@ -52,18 +54,16 @@ body {
                 grid-column: 2/5;
             }
         .container > .bottom {
-            background-color: hotpink;
             display: grid;
             width: 90%;
             margin: 5px 5%;
             grid-template-columns: 40% 60%;
+            padding: 10px 3%;
         }
-            .container > .bottom > .extrabodies {
-                background-color: indianred;
-                display: inline-block;
+            .container > .bottom > .popdown {
                 grid-column: 1/2;
             }
-            .container > .bottom > .extraother {
+            .container > .bottom > .extras {
                 background-color: lawngreen;
                 display: inline-block;
                 grid-column: 2/3;
