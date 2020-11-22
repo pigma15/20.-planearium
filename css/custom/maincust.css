@@ -86,4 +86,30 @@
                         font-size: 14px;
                         line-height: 16px;
                     }
+                    .form > .row > .button {
+                        width: 50%;
+                        margin: 10px 25% 5px 25%;
+                    }
+/*    .container > .main {
+        display: grid;
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 50px;
+        grid-template-columns: 1fr 30% 30% 30% 1fr;
+        border-bottom: 2px solid grey;
+    }
+        .container > .main > span {
+            display: inline-block;
+            grid-column: 2/5;
+            width: 90%;
+            color: rgb(235, 235, 235);
+            font-family: monospace;
+            font-size: 30px;
+            text-transform: capitalize;
+            text-decoration: underline;
+            margin: 3px 0 27px 10%;
+        }
+        .container > .main > .planetcont {
+            grid-column: 2/5;
+        } */
 }
