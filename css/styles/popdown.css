@@ -46,8 +46,8 @@
                     }
             .popdown > .popmain > .popmenu > .popobject > a {
                 display: inline-block;
-                width: 50%;
-                margin: 2px 20% 2px 30%;
+                width: 30%;
+                margin: 2px 20% 2px 50%;
             }
                 .popdown > .popmain > .popmenu > .popobject > a > img {
                     display: inline-block;

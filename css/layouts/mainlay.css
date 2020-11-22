@@ -62,9 +62,28 @@ body {
         }
             .container > .bottom > .popdown {
                 grid-column: 1/2;
+                border-right: 2px solid grey;
             }
             .container > .bottom > .extras {
-                background-color: lawngreen;
+                background-color: deepskyblue;
                 display: inline-block;
                 grid-column: 2/3;
+                width: 96%;
+                margin: 0% 2%;
             }
+                .container > .bottom > .extras > .links {
+                    background-color: firebrick;
+                    display: inline-block;
+                    width: 40%;
+                    float: left;
+                }
+                .container > .bottom > .extras > .random {
+                    background-color: greenyellow;
+                    display: inline-block;
+                    width: 60%;
+                    float: right;
+                }
+                    .container > .bottom > .extras > .random > img {
+                        display: inline-block;
+                        width: 100%;
+                    }
