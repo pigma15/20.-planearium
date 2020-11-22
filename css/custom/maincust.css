@@ -8,3 +8,65 @@
 .planetcont:nth-of-type(2) {
     padding-bottom: 50px;
 }
+
+@media (max-width: 770px) {
+    .container > .top {
+        width: 90%;
+        margin: 5px 5% 0;
+        border-bottom: 1px grey solid;
+    }
+        .container > .top > a {
+            width: 70%;
+            margin-left: calc(30% / 2);
+            transition: 0.6s;
+        }
+        .container > .top > .form {
+            width: 100%;
+        }
+                .form > .row > .label {
+                    width: 25%;
+                    margin-left: 30%;
+                }
+    .container > .main {
+        margin-top: 40px;
+        grid-template-columns: 1fr 20% 30% 40% 1fr;
+    }
+        .container > .main > span {
+            grid-column: 2/3;
+            width: 90%;
+            font-size: 26px;
+            margin: 3px 2% 27px 4%;
+        }
+        .container > .main > .planetcont {
+            grid-column: 3/5;
+        }
+        .planetcont {
+            grid-template-columns: 1fr 1fr;
+        }
+        .planetcont > a {
+            width: 80%;
+            margin: 5%;
+        }
+            .planetcont > a > span {
+                padding: 1%;
+                line-height: 17px;
+                font-size: 16px;
+            }
+                .container > .main > span:nth-of-type(2) {
+                    margin-top: 35px;
+                }
+                .planetcont:nth-of-type(2) {
+                    margin-top: 50px;
+                }
+    .container > .bottom {
+        grid-template-columns: 60% 40%;
+    }
+            .container > .bottom > .extras > .links {
+                width: 100%;
+                margin-right: 3%;
+                margin-bottom: 10px;
+            }
+            .container > .bottom > .extras > .random {
+                width: 100%;
+            }
+}
