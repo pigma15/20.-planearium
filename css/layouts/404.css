@@ -1,0 +1,41 @@
+body {
+    background-color: #0d1114;
+    background-image: url("../../img/black-hole.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+    a {
+        float: right;
+        padding: 8vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-top: calc( 26vw - 8vw );
+        margin-right: calc( 28.3vw - 2vw );
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Verdana;
+        font-size: 1.3vw;
+        color: #e6ebef;
+        text-decoration: none;
+    }
+    a:hover {
+        background-image: url(../../img/circle.png);
+        background-size: 17vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+@media (max-width: 900px) {
+    body {
+        background-image: url("../../img/black-hole-vert.jpg");
+    }
+        a {
+            padding: 13vw 3vw;
+            margin-top: 39vw;
+            margin-right: 36vw;
+            font-size: 2.5vw;
+        }
+        a:hover {
+            background-size: 34vw;
+            background-repeat: no-repeat;
+        }
+}
