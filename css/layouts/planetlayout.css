@@ -196,7 +196,7 @@ body {
             display: inline-block;
             width: 100%;
             background-color: black;
-            height: 50px;
+            height: auto;
         }
             .container > .dugnas > p {
                 display: inline-block;
